@@ -6,6 +6,11 @@ const mongoose = require('mongoose');
 
 const app = express();
 
+//for front end
+
+app.use(express.static('public'));
+
+
 //body parser
 
 app.use(bodyParser.json());
